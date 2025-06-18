@@ -1,0 +1,20 @@
+{
+  "email": "nuevo.usuario@demo.com",
+  "username": "nuevousuario",
+  "password": "abc123",
+  "name": {
+    "firstname": "Juan",
+    "lastname": "Pérez"
+  },
+  "address": {
+    "city": "Bogotá",
+    "street": "Calle 123",
+    "number": 99,
+    "zipcode": "11001",
+    "geolocation": {
+      "lat": "-75.1234",
+      "long": "4.5678"
+    }
+  },
+  "phone": "3119998877"
+}

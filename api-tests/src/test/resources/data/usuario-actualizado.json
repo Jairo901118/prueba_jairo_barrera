@@ -1,0 +1,20 @@
+{
+  "email": "usuario.actualizado@demo.com",
+  "username": "usuarioEditado",
+  "password": "nueva123",
+  "name": {
+    "firstname": "Carlos",
+    "lastname": "Ramírez"
+  },
+  "address": {
+    "city": "Medellín",
+    "street": "Calle 456",
+    "number": 123,
+    "zipcode": "050021",
+    "geolocation": {
+      "lat": "6.2442",
+      "long": "-75.5812"
+    }
+  },
+  "phone": "3123456789"
+}
