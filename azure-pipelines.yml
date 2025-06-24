@@ -1,0 +1,22 @@
+trigger:
+- main  # cambia si tu rama principal tiene otro nombre
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: Maven@3
+  displayName: 'Ejecutar pruebas Karate con Maven'
+  inputs:
+    mavenPomFile: 'pom.xml'
+    goals: 'clean test'
+    options: '-Dmaven.test.failure.ignore=false'
+    publishJUnitResults: true
+    testResultsFiles: '**/target/surefire-reports/TEST-*.xml'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publicar reportes HTML de Karate'
+  inputs:
+    PathtoPublish: 'target/karate-reports'
+    ArtifactName: 'karate-reports'
+    publishLocation: 'Container'
